@@ -6,7 +6,6 @@ const initialState = {
     err: null
 }
 
-
 const commmentsReducer = (state=initialState, action) => {
     switch(action.type){
         case FETCH_COMMENTS_REQUEST: 

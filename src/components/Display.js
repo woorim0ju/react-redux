@@ -9,7 +9,6 @@ const Display = (props) => {
     );
 };
 
-
 const mapStateToProps = (state) => { //props.count
     return {
         count: state.subscribers.count //count가 props로 전달됨

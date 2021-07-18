@@ -1,5 +1,4 @@
-import {ADD_SUBSCRIBER,REMOVE_SUBSCRIBER} from './type';
-
+import {ADD_SUBSCRIBER,REMOVE_SUBSCRIBER} from './types';
 
 const initialState = { //state 초깃값
     count : 100

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import {connect} from 'react-redux';
 import { addView, removeView } from '../redux/index';
 
-
 const Views = ({count, addView, removeView}) => { //destructuring
 const [number, setNumber] = useState(1)
 
@@ -12,9 +11,7 @@ const [number, setNumber] = useState(1)
         {/* input value가 onChange될때마다 number값에 저장 */}
         <input type='text' value={number} onChange={(e) => setNumber(e.target.value)} />    
         <button onClick={()=>addView(number)}>증가</button>
-        <button onClick={()=>removeView(number)}>감소</button>
-         
-        
+        <button onClick={()=>removeView(number)}>감소</button> 
         </div>
     );
 };
@@ -24,7 +21,6 @@ const mapStateToProps = (state) => { //props.coun
         count: state.views.count //count가 props로 전달됨
     }
 }
-
 
 const mapDispatchToProps = { 
     addView: (number) => addView(number), //메서드로 전달

@@ -1,6 +1,5 @@
 import {ADD_VIEW, REMOVE_VIEW} from './types';
 
-
 const initialState = { //state 초깃값
     count : 0
 }
@@ -22,4 +21,4 @@ const viewsReducer = (state = initialState, action) => {
     }
 }
 
-export default viewsReducer;   
+export default viewsReducer;
